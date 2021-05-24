@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+    <title>remember!</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Animated Header -->
+      <section class="header">
+        <h1 class="title animated zoomIn delay-3s">hello, what's your name?</h1>
+        <h1 class="animated bounceIn delay-4s"><i class="fa fa-user animated bounceIn delay-4s" aria-hidden="true"></i></h1>
+      </section>
+
+      <br>
+      <br>
+      <!-- What's your name? Form -->
+      <form class="form-inline" id="name-form">
+        <label class="sr-only" for="inlineFormInput">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-control-lg" id="name" placeholder="Jane Doe">
+        <button type="submit" class="btn btn-info btn-lg name-btn custom-class">Enter</button>
+      </form>
+
+      <!-- Remember to grab form-->
+      <form class="form-inline" id="list-form">
+        <label class="sr-only" for="inlineFormInput">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-control-lg" id="item" placeholder="Remember to grab...">
+        <button type="submit" class="btn btn-info btn-lg remember-btn custom-class">Remember!</button>
+        <button type="submit" class="btn btn-info btn-lg update-btn custom-class">Update!</button>
+      </form>
+
+      <!-- Remeber to grab list -->
+      <div class="card text-center mx-auto custom-card bg-light mb-3" id="item-list">
+        <div class="card-header dont-forget-head">
+          Don't forget...
+        </div>
+        <div class="card-body">
+          <ul class="list-group item-list">
+          </ul>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-md clear-remember">Clear All</button>
+        </div>
+      </div>
+      <!-- Already grabbed list -->
+      <div class="card text-center mx-auto custom-card bg-light mb-3" id="complete-item-list">
+        <div class="card-header already-grabbed-head">
+          Got it...
+        </div>
+        <div class="card-body">
+          <ul class="list-group complete-item-list">
+          </ul>
+        </div>
+        <div class="card-footer text-muted">
+          <button class="btn btn-md clear-completed">Clear All</button>
+        </div>
+      </div>
+        <br>
+        <br>
+        <br>
+       <button class="btn clear-all sign-out">Start Over</button>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

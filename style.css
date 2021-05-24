@@ -1,0 +1,146 @@
+/* colors
+blue: #7078ad;
+GOLD: #e8bc3a;
+green: #349b61;
+
+*/
+/************GENERAL**********/
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #7078ad;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20%;
+}
+
+
+/************BUTTONS**********/
+
+input{
+  color: #4e2e6b;
+}
+
+input.name-btn:hover,
+input.remember-btn:hover{
+  border: 1px solid darkgrey;
+  background: #5ca4ed;
+}
+
+input.update-btn:hover{
+  background: green;
+  color: white;
+  border: 2px double white;
+}
+
+input.edit-border,
+input.update-btn {
+  border: 2px double #349b61;
+  color: green;
+}
+
+input.update-btn {
+  color: #349b61;
+}
+
+.clear-all {
+  background: #dae1e8;
+  display: block;
+  color: #5f6266;
+  height: 45px;
+  width: 145px;
+  margin: auto;
+}
+
+.clear-all:hover,
+.clear-completed:hover,
+.clear-remember:hover {
+  background: #5bc0de;
+}
+
+/************LISTS**********/
+.list-group-item{
+  text-align: left;
+}
+
+
+#item-list{
+  margin-top: 10%;
+}
+
+#complete-item-list{
+  margin-top: 10%;
+}
+.list-group-item {
+  font-size: 1.3em;
+}
+
+.remember-list-item,
+.completed-list-item {
+  color: #315896;
+}
+
+
+/************ICONS**********/
+i.edit-item,
+i.complete-item,
+i.delete-item,
+i.delete-completed-item {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: right;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+i.edit-item:hover,
+i.complete-item:hover,
+i.delete-item:hover,
+i.delete-completed-item:hover {
+  color: #e8bc3a;
+}
+
+i.edit-item {
+  color: #d87f27;
+  margin-left: 6px;
+}
+
+i.complete-item {
+  color: #349b61;
+}
+
+i.delete-item,
+i.delete-completed-item {
+  color: #aa293c;
+  margin-left: 6px;
+}
+
+.dont-forget-head, .already-grabbed-head {
+  color: #5bc0de;
+  font-size: 20px;
+}
+/************RESPONSIVE/CARD**********/
+
+@media all and (max-width:480px) {
+ .custom-class {
+   width: 100%;
+   display:block;
+   margin-top: 4%;
+ }
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
